@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "viaslidy",
+  "version": "${version}",
+  "name": "ViaSlidy",
+  "description": "This mod allows you to quickly change your minecraft version via slider ingame!",
+  "authors": [
+    "kamshi"
+  ],
+  "contact": {
+    "homepage": "https://kamshi.dev"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/viaslidy/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "cc.kamshi.viaslidy.client.ViaslidyClient"
+    ]
+  },
+  "mixins": [
+    "viaslidy.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
